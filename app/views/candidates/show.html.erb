@@ -1,0 +1,12 @@
+
+
+<h1>Candidate: <%= @records[0]['Candidate']['Candidate'] %></h1>
+<h2> Top five contributors </h2>
+	
+<ol>
+	<% 5.times do |i| %>
+		<li>Name: <%= @records[i]['Contributor']['Contributor'] %>, Amount: <%= @records[i]['Total_$']['Total_$'] %></li>
+	<% end %>
+</ol>
+
+
